@@ -176,6 +176,17 @@
 body,
 .elementor {
     overflow-x: hidden !important;
+    overflow-x: clip !important;
+}
+html, body {
+    max-width: 100%;
+    overscroll-behavior-x: none;
+}
+.elementor, .e-con, .e-con-inner {
+    max-width: 100vw;
+}
+img {
+    max-width: 100%;
 }
 
 p{
@@ -198,3 +209,32 @@ p{
 .elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a:visited,
 .elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a:hover,
 .elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a:active{color:#F1F1F1;text-decoration:none;}
+/* Fix tarja branca no iPhone: containers de 500px + scale(1.1) estouravam a viewport e o Safari mostrava a sobra ao tirar o zoom */
+@media (max-width: 767px) {
+    .elementor-1362 .elementor-element.elementor-element-b8eb752,
+    .elementor-1362 .elementor-element.elementor-element-feb5d5b,
+    .elementor-1362 .elementor-element.elementor-element-79bf1a4,
+    .elementor-1362 .elementor-element.elementor-element-fba3e34,
+    .elementor-1362 .elementor-element.elementor-element-dab9a36 {
+        transform: none !important;
+        overflow: hidden !important;
+        overflow: clip !important;
+        --width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .elementor-1362 .elementor-element.elementor-element-b7f86e1 {
+        --width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .elementor-1362 .elementor-element.elementor-element-13f9bbe {
+        transform: none !important;
+    }
+    .elementor-1362 .elementor-element.elementor-element-7641993 > .elementor-widget-container {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
