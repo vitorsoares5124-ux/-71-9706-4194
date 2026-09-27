@@ -191,3 +191,10 @@ p{
 .rv-fallback-dots button{width:10px;height:10px;border-radius:50%;border:0;background:#F3C3D8;padding:0;cursor:pointer;min-height:0}
 .rv-fallback-dots button[aria-current="true"]{background:#E81895}
 @media (prefers-reduced-motion:reduce){.rv-fallback .swiper-wrapper{transition:none}}
+/* Suporte footer - mesmo padrão dos demais itens */
+.elementor-1362 .elementor-element.elementor-element-5c5c0a63{text-align:center;}
+.elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title{font-family:"Montserrat", Sans-serif;font-size:14px;font-weight:400;line-height:1.2em;color:#F1F1F1;text-align:center;margin:0;}
+.elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a,
+.elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a:visited,
+.elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a:hover,
+.elementor-1362 .elementor-element.elementor-element-5c5c0a63 .elementor-heading-title a:active{color:#F1F1F1;text-decoration:none;}
